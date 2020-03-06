@@ -50,7 +50,12 @@ List of some important command :
   
  **conda install -c anaconda jupyter**       //install jupyther in the active environment for developping under python
  
- **Jupyter** //for running jupyther developement environment
+ **jupyter** //for running jupyter developement environment
+ 
+ **jupyter notebook** //for running jupyter notebook developement environment
+ 
+ **spider** // for running python development environment
+ 
 
 ´´´
 
