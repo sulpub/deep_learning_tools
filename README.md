@@ -21,6 +21,7 @@ Nota : under windows open the Anaconda prompt with the admin account.
 List of some important command :
 
 ´´´
+
 **anaconda-navigator** //for running the Anaconda GUI navigator
 
 **conda update anaconda-navigator**  //for updating the anaconda GUI navigator
@@ -34,13 +35,10 @@ List of some important command :
 **conda create -n [my-env-name] python=[python-version]**  //create a new environment with conda with a special version of python
  
 **source activate [my-env-name]** // activate your created environment
- 
- 
 
  **conda info**  //Explore the environment you created
  
  **conda list**  //Explore the environment you created
-
 
  **conda info -e**   //Explore your created environments
  
@@ -69,6 +67,7 @@ Informations concerning the YOLO V3 software. Whit this tool you can detect obje
 
 ### Sofware compilation
 Before starting using this software you can use these git command to uplaof software on your computer.
+
 ```
 //original deposit of darknet
 git clone https://github.com/pjreddie/darknet
@@ -83,24 +82,33 @@ git checkout darknet_yolo_v3 -b jetson_nano
 
 // for loading software using to mark your own object on picture for the learning
 git clone https://github.com/AlexeyAB/Yolo_mark.git
+
 ```
+
 **Under linux** use these commands :
+
 #### Compilation under Linux with cmake
 If you want to use cmake, after install cmake compilator, use these commands :
+
 ```
+
 mkdir build-release
 cd build-release
 cmake ..
 make
 make install
+
 ```
 
 ####  Compilation under Linux with make
 If you want run the make compilation, use these commands :
+
 ```
+
 // run make in the darknet directory.
 //before do this you can configure the Makefile for using GPU or other options.
 make
+
 ```
 Before make, you can set such options in the Makefile: link
 
@@ -114,6 +122,9 @@ Before make, you can set such options in the Makefile: link
  * **ZED_CAMERA=1** to build a library with ZED-3D-camera support (should be ZED SDK installed), then run LD_LIBRARY_PATH=./:$LD_LIBRARY_PATH ./uselib data/coco.names cfg/yolov4.cfg yolov4.weights zed_camera
 
 To run Darknet on Linux use examples from this article, just use this command
+
 ```
 ./darknet detector test ./cfg/coco.data ./cfg/yolov4.cfg ./yolov4.weights
 ```
+
+
