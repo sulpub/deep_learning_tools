@@ -4,7 +4,7 @@ Informations concerning deep learning tools and software.
 **__________________________ SOMMAIRE _____________________________**
 
 * [Anaconda software informations](#ANACONDA)
-* [Darknet yolo objet detection tools](#DARKNET)
+* [Darknet yolo objet detection tools](#DARKNET_YOLO_SOFTWARE)
 
 ---------------------------------------------------------------------------------------------------------------------------
 
@@ -68,7 +68,7 @@ List of some important command :
 
 -----------------------------------------------------------------------------------------------------------
 
-# DARKNET YOLO SOFTWARE
+# DARKNET_YOLO_SOFTWARE
 Informations concerning the YOLO V3 software. Whit this tool you can detect object or person using neurql network.
 
 ## Learn your own object
