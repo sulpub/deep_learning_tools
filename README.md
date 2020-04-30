@@ -71,9 +71,7 @@ List of some important command :
 # DARKNET_YOLO_SOFTWARE
 Informations concerning the YOLO V3 software. Whit this tool you can detect object or person using neurql network.
 
-## Learn your own object
-
-### Sofware compilation
+## Sofware compilation
 Before starting using this software you can use these git command to uplaof software on your computer.
 
 ```
@@ -131,8 +129,37 @@ Before make, you can set such options in the Makefile: link
 
 To run Darknet on Linux use examples from this article, just use this command
 
+**Yolo v4 COCO with image**
 ```
-./darknet detector test ./cfg/coco.data ./cfg/yolov4.cfg ./yolov4.weights
+./darknet  detector test cfg/coco.data cfg/yolov4.cfg yolov4.weights -thresh 0.25
 ```
+**Get the output coordinates of objects**
+```
+./darknet  detector test cfg/coco.data yolov4.cfg yolov4.weights -ext_output dog.jpg
+```
+**Yolo v4 COCO with video MP4**
+```
+./darknet  detector demo cfg/coco.data cfg/yolov4.cfg yolov4.weights -ext_output test.mp4
+```
+**Yolo v4 COCO with WebCam 0**
+```
+./darknet  detector demo cfg/coco.data cfg/yolov4.cfg yolov4.weights -c 0
+```
+**Yolo v4 COCO with net-videocam or Smart WebCam on android**
+```
+./darknet detector demo cfg/coco.data cfg/yolov4.cfg yolov4.weights http://192.168.0.80:8080/video
+```
+
+## Learn your own object
+
+Here is the important stage for making the learning of your own object under yolo :
+1. Get batch images using for learning and testing
+2. Create obj.data for indicate location of image learning and testing
+3. Create obj.name for writing the name of your object that you want to detect
+4. Annotate your images with Yolo_mark
+5. Find and replace the 0x0A to 0x0D0x0A on the train.txt file
+6. separate learning image and testing image in two file train.txt and test.txt
+7. Prepare your config file in darknet/cfg directory
+8. run the training
 
 
