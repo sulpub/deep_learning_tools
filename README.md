@@ -4,7 +4,7 @@ Informations concerning deep learning tools and software.
 **__________________________ SOMMAIRE _____________________________**
 
 * [Anaconda software informations](#ANACONDA)
-* [Darknet yolo objet detection tools](#DARKNET YOLO SOFTWARE)
+* [Darknet yolo objet detection tools](#DARKNET)
 
 ---------------------------------------------------------------------------------------------------------------------------
 
