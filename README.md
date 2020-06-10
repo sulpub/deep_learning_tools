@@ -4,6 +4,7 @@ Informations concerning deep learning tools and software.
 **__________________________ SOMMAIRE _____________________________**
 
 * [Anaconda software informations](#ANACONDA)
+* [Jupyter notebook informations](#JUPYTER_NOTEBOOK)
 * [Darknet yolo objet detection tools](#DARKNET_YOLO_SOFTWARE)
 
 ---------------------------------------------------------------------------------------------------------------------------
@@ -65,6 +66,20 @@ List of some important command :
 ´´´
 
 ![Example command running (conda upgrade --all) ](images/anaconda_prompt_view1.jpg)
+
+---------------------------------------------------------------------------------------------------------------------------
+
+# JUPYTER_NOTEBOOK
+
+Jupyter notebook is tool that allow to develop visual and documented python web page.
+
+To run jupyter notebook, find anaconda under windows and run it in administrator mode.
+
+When the windows prompt is open, go to the directory where your data is stored. then run these command :
+
+* **jupyter notebook** to run notebook in local.
+* **jupyter notebook --ip XX.XX.XX.XX** to run notebook where is possible to access with other computer on your local network. For the first run, the webpage http://IP_JUPYTER_NOTEBOOK:8888/tree ask you a password open the terminal that you run jupyter notebook and find the link http://192.168.0.112:8888/?token=TOKEN_TO_COPY_PASTE. Copy and paste this token. 
+Your jupyter nottebook is also functionnal.
 
 -----------------------------------------------------------------------------------------------------------
 
